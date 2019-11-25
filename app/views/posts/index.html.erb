@@ -1,0 +1,5 @@
+<% @posts.each do |post|%>
+   <!-- <a href="<%="/posts/#{post.id}"%>"><%=post.title%></a> -->
+    <!-- action view helper to do the same as above: -->
+    <%= link_to post.title, post_path(post.id)%>
+<% end%>
